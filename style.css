@@ -206,16 +206,19 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     color: #525556;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    z-index: +1;
+}
+
+.top_block_form_sub {
     max-width: 500px;
     min-height: 250px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    top: 33%;
-    left: 33%;
 }
 
 .top_block_form_close {
@@ -253,11 +256,10 @@ body {
     transform: rotate(-45deg);
 }
 
-
-
 .top_block_form_disable {
     display: none;
 }
+
 .top_block_form_title {
     font-size: 18px;
     text-align: center;
@@ -289,7 +291,8 @@ body {
     border-color: #e0a88b;
 }
 
-.top_block_form_input:focus ~ .top_block_form_label_text {
+.top_block_form_input_focus {
+    position: absolute;
     top: 4px;
     left: 8px;
     font-size: 10px;
@@ -363,4 +366,46 @@ body {
 .top_block_form_button:hover {
     border-color: #e0a88b;
     color: #e0a88b;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.success_send {
+    max-width: 400px;
+    min-height: 250px;
+    font-family: roboto, Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #525556;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    z-index: +1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.success_send_button {
+    min-width: 200px;
+    height: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #525556;
+    border: 2px solid #6f7f9e;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: roboto, Arial, sans-serif;
+    font-weight: 300;
+    align-self: center;
+}
+
+.success_send_disable {
+    display: none;
 }
