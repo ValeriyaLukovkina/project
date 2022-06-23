@@ -38,21 +38,27 @@
         </section>
     </header>
     <div class="top_block_form top_block_form_disable">
-        <div class="top_block_form_title">Оставьте заявку на звонок и администротор свяжется с вами в течение 1 часа</div>
-        <label class="top_block_form_label">
-            <input type="text" class="top_block_form_input top_block_form_name">
-            <span class="top_block_form_label_text">Введите имя</span>
-        </label>
-        <label class="top_block_form_label">
-            <input type="tel" class="top_block_form_input top_block_form_tel">
-            <span class="top_block_form_label_text">Введите телефон</span>
-        </label>
-        <div class="top_block_form_privat">
-            <input type="checkbox" name="top_block_form_privat_checkbox" id="top_block_form_privat_checkbox" class="top_block_form_privat_checkbox">
-            <label for="top_block_form_privat_checkbox" class="top_block_form_private_text">Я согласен с политикой конфеденциальности</label>            
-        </div>
-        <input type="submit" class="top_block_form_button">
+        <form action="" method="POST" id="top_block_form_sub" class="top_block_form_sub">    
+            <div class="top_block_form_title">Оставьте заявку на звонок и администротор свяжется с вами в течение 1 часа</div>
+            <label class="top_block_form_label">
+                <input name="name" type="text" class="top_block_form_input top_block_form_name" value="" required>
+                <span class="top_block_form_label_text">Введите имя</span>
+            </label>
+            <label class="top_block_form_label">
+                <input name="tel" type="tel" class="top_block_form_input top_block_form_tel" value="" required>
+                <span class="top_block_form_label_text">Введите телефон</span>
+            </label>
+            <div class="top_block_form_privat">
+                <input name="private" type="checkbox" name="top_block_form_privat_checkbox" id="top_block_form_privat_checkbox" class="top_block_form_privat_checkbox" required>
+                <label for="top_block_form_privat_checkbox" class="top_block_form_private_text">Я согласен с политикой конфеденциальности</label>            
+            </div>
+            <input type="submit" class="top_block_form_button">
+        </form>   
         <button class="top_block_form_close"></button>
+    </div>
+    <div class="success_send success_send_disable">
+        <h4 class="success_send_title">Ваша заявка успешно зарегистрирована. Ожидайте звонка!</h4>
+        <button class="success_send_button">ок</button>
     </div>
     <script src="main.js"></script>
 </body>
