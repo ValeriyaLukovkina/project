@@ -109,6 +109,7 @@
     let buttonsShowPrice = service.querySelectorAll('.service_block_price');
     let servicePriceClose = servicePrice.querySelector('.service_button_close');
     let fixed;
+    let wrpAll = document.querySelector(selectorWrp);
     let serviceButton = servicePrice.querySelector('.service_button');
     let body = document.querySelector('body')
     for (let buttonShowPrice of buttonsShowPrice) {
@@ -117,12 +118,13 @@
             servicePrice.classList.remove('service_price_treatment_wrp_disable');
             wrp.classList.add('top_mute');
             // servicePrice.classList.add('service_price_treatment_wrp_add')
-            // wrpAll.classList.add('top_mute');
+            wrpAll.classList.add('top_mute');
             fixed = document.createElement('div');
             fixed.classList.add('fixed-1');
             fixed.addEventListener('click', function() {
                 servicePrice.classList.add('service_price_treatment_wrp_disable');
                 wrp.classList.remove('top_mute');
+                wrpAll.classList.remove('top_mute');
                 servicePrice.removeChild(fixed);
             });
             servicePrice.appendChild(fixed);
@@ -136,6 +138,7 @@
     servicePriceClose.addEventListener('click', function() {
         servicePrice.classList.add('service_price_treatment_wrp_disable');
         wrp.classList.remove('top_mute');
+        wrpAll.classList.remove('top_mute');
         servicePrice.removeChild(fixed);
     });
 
