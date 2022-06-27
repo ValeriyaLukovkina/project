@@ -305,6 +305,7 @@ body {
     top: 4px;
     left: 8px;
     font-size: 10px;
+    transition: .3s;
 }
 
 .top_block_form_label_text {
@@ -1025,6 +1026,112 @@ body {
 .doctor_link_wrp {
     background-color: #f7f7f7;
     text-align: center;
+}
+
+.join_wrp {
+    background-color: #b7becf;
+    background-image: url(images/join.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.join {
+    position: relative;
+    text-align: center;
+}
+
+.join_title {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.join_text {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.join_form {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 30px 60px 30px;
+}
+
+.join_form_label {
+    position: relative;
+}
+
+.join_form_input {
+    width: 250px;
+    min-height: 87px;
+    outline: 0;
+    font-size: 18px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.join_form_span {
+    position: absolute;
+    top: 33px;
+    left: 24px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #6f7f9e;
+}
+
+.join_form_span_focus {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    transition: 0.3s;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #6f7f9e;
+}
+
+.join_add {
+    position: absolute;
+    bottom: -25px;
+    left: 8px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.join_add_mute {
+    opacity: 0;
+}
+
+.join_button {
+    width: 300px;
+    min-height: 87px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #6f7f9e;
+    border: 2px solid #6f7f9e;
+    border-radius: 10px;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 0 25px;
+}
+
+.join_button:hover {
+    color: #e0a88b;
+    border-color: #e0a88b;
+}
+
+.join_success {
+    position: absolute;
+    bottom: -36px;
+    right: 78px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.join_success_mute {
+    opacity: 0;
 }
 
 .map {

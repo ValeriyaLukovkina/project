@@ -1,0 +1,41 @@
+.about_us_top {
+    background: none;
+}
+
+.about_us_info {
+    position: relative;
+}
+
+.about_us_info_wrp {
+    max-width: 550px;
+    
+}
+
+.about_us_info_bgc {
+    position: absolute;
+    top: -24px;
+    left: -36px;
+}
+
+.about_us_info_txt {
+    margin: 50px 0 50px 0;
+}
+
+.about_us_info_item {
+    list-style-type: none;
+    margin: 30px 0 0 30px;
+    position: relative;
+}
+
+.about_us_info_item:before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: -47px;
+    border: 2px solid #e0a88b;
+    border-top: transparent;
+    border-radius: 0 0 50px 50px;
+}

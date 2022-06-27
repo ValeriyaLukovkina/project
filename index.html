@@ -17,7 +17,7 @@
                     <nav class="top_nav">
                         <ul class="top_list">
                             <li class="top_item"><a href="#" class="top_item_link top_item_link1">Главная</a></li>
-                            <li class="top_item"><a href="#" class="top_item_link top_item_link2">О клинике</a></li>
+                            <li class="top_item"><a href="about_us.html" class="top_item_link top_item_link2">О клинике</a></li>
                             <li class="top_item"><a href="#" class="top_item_link top_item_link3">Услуги</a></li>
                             <li class="top_item"><a href="#" class="top_item_link top_item_link4">Галлерея</a></li>
                             <li class="top_item"><a href="#" class="top_item_link top_item_link5">Команда</a></li>
@@ -165,6 +165,27 @@
                     </button>    
                 </section>
             </div>
+            <div class="join_wrp">
+                <div class="join container">
+                    <h3 class="section_title join_title">Хотите узнать о нас еще больше?</h3>
+                    <p class="section_text join_text">Оставьте заявку на звонок и</p>
+                    <p class="section_text join_text">администратор с вами свяжется в течение 1 часа</p>
+                    <form action="" method="POST" id="join_form" class="join_form">
+                        <label class="join_form_label">
+                            <input name="name" type="text" class="join_form_input">
+                            <span class="join_form_span">Введите имя</span>
+                            <span class="join_add join_add_mute">Ошибка! Вы не ввели имя</span>
+                        </label>
+                        <label class="join_form_label">
+                            <input name="tel"  type="tel" class="join_form_input">
+                            <span class="join_form_span">Введите телефон</span>
+                            <span class="join_add join_add_mute">Ошибка! Вы не ввели телефон</span>
+                        </label>
+                        <input type="submit" class="join_button">
+                    </form>
+                    <div class="join_success join_success_mute">Заявка успешно отправлена</div>
+                </div>                
+            </div>
             <div class="container map">
                 <iframe class="map_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.431835241768!2d30.3649832160263!3d59.924976281871196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631300a16f0a3%3A0x6d3b6ba2f2eb5e47!2sDental%20Lounge%20Ester!5e0!3m2!1sru!2sid!4v1656307452723!5m2!1sru!2sid" width="1024" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="map_block">
@@ -202,8 +223,8 @@
                     <label for="top_block_form_privat_checkbox" class="top_block_form_private_text">Я согласен с политикой конфеденциальности</label>            
                 </div>
                 <input type="submit" class="top_block_form_button">
+                <button class="top_block_form_close"></button>
             </form>   
-            <button class="top_block_form_close"></button>
         </div>
         <div class="success_send success_send_disable">
             <h4 class="success_send_title">Ваша заявка успешно зарегистрирована. Ожидайте звонка!</h4>
@@ -275,8 +296,9 @@
                 <button class="service_button_close"></button>
             </div>
         </div>
-
+        </div>
 
     <script src="main.js"></script>
+    <script src="registration.js"></script>
 </body>
 </html>
