@@ -1,0 +1,22 @@
+.top {
+    background: none;
+}
+
+.portfolio_portfolio_top {
+    display: block;
+}
+
+.portfolio_block_wrp {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio_portfolio_photo_wrp {
+    margin-bottom: 50px;
+}
+
+.portfolio_portfolio_txt {
+    max-width: 500px;
+    margin-left: 50px;
+    
+}

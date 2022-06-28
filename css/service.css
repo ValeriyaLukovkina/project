@@ -58,7 +58,7 @@
     height: 34px;
     top: -4px;
     right: -40px;
-    background-image: url(images/pdf.svg);
+    background-image: url(../images/pdf.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
