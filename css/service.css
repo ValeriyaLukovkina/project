@@ -1,0 +1,69 @@
+.top {
+    background: none;
+}
+
+.service_text_wrp {
+    width: 550px;
+    font-size: 16px;
+    margin-right: 20px;
+}    
+
+.service_service_text {
+    font-size: 18px;
+}
+
+
+.service_serv_wrp_in {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.service_price_link {
+    text-decoration: none;
+    display: block;
+    min-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 50px 20px 50px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #525556;
+    border-top: 2px solid #525556;
+    position: relative;
+    overflow: visible;
+}
+
+.service_price_link:last-child {
+    border-bottom: 2px solid #525556;
+}
+
+.service_name:before {
+    content: attr(data-count);
+    position: absolute;
+    top: 21px;
+    left: 5px;
+}
+
+.service_add {
+    position: relative;
+}
+
+.service_add:after {
+    content: '';
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    top: -4px;
+    right: -40px;
+    background-image: url(images/pdf.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.service_price_link:hover .service_name,
+.service_price_link:hover .service_add {
+    opacity: 0.5;
+}

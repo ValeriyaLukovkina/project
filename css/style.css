@@ -1,27 +1,27 @@
 @font-face {
     font-family: roboto;
-    src: url(font/Roboto-Light.ttf);
+    src: url(../font/Roboto-Light.ttf);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: roboto;
-    src: url(font/Roboto-Regular.ttf);
+    src: url(../font/Roboto-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: roboto;
-    src: url(font/Roboto-Medium.ttf);
+    src: url(../font/Roboto-Medium.ttf);
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: roboto;
-    src: url(font/Roboto-Bold.ttf);
+    src: url(../font/Roboto-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
@@ -47,7 +47,7 @@ body {
 .top {
     padding: 30px;
     min-height: 100%;
-    background-image: url(images/top_bgc.png);
+    background-image: url(../images/top_bgc.png);
     background-repeat: no-repeat;
     background-position: 175% 100%;
 }
@@ -433,7 +433,7 @@ body {
 }
 
 .about_us {
-    background-image: url(images/micro.png);
+    background-image: url(../images/micro.png);
     max-height: 450px;
     background-repeat: no-repeat;
     background-position: -120px 45px;
@@ -1030,7 +1030,7 @@ body {
 
 .join_wrp {
     background-color: #b7becf;
-    background-image: url(images/join.png);
+    background-image: url(../images/join.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -1225,7 +1225,7 @@ body {
 
 .footer_item {
     list-style-type: none;
-    background-image: url(images/sprite.png);
+    background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
@@ -1254,4 +1254,12 @@ body {
 
 .footer_item_twitter:hover {
     background-position: -78px -73px;
+}
+
+.top_here {
+    visibility: visible;
+    color: #e0a88b;
+}
+.top_here:before {
+    visibility: visible;
 }
