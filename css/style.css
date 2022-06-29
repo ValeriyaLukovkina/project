@@ -1262,3 +1262,7 @@ body {
 .top_here:before {
     visibility: visible;
 }
+
+.contacts_top {
+    background: none;
+}

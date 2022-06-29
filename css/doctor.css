@@ -2,3 +2,137 @@
     background: none;
 }
 
+.doctor_doctor_block_wrp {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.doctor_doctor_photo {
+    width: 300px;
+    height: auto;
+}
+
+.doctor_doctor_block_txt_wrp {
+    max-width: 600px;
+}
+
+.doctor_doctor_name {
+    font-family: roboto, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 0 10px 30px;
+}
+
+.doctor_doctor_profession {
+    font-family: roboto, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 10px 30px;
+}
+
+.doctor_list {
+    font-family: roboto, Arial, sans-serif;
+    line-height: 1.2;
+    color: #525556;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.doctor_item {
+    margin-bottom: 10px;
+}
+
+.doctor_sertificate {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 20px 100px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #6f7f9e;
+    background-color: #fff6ec;
+    position: relative;
+    /* text-align: center; */
+}
+
+.doctor_sertificate:hover .doctor_sertificate_span,
+.doctor_sertificate:hover .doctor_sertificate_hand_close,
+.doctor_sertificate:hover .doctor_sertificate_hand_open,
+.doctor_sertificate:hover .doctor_sertificate_line {
+    opacity: 0.5;
+}
+
+.doctor_sertificate_span {
+    display: block;
+    margin: 0 auto;
+}
+
+.doctor_sertificate_span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    width: 50px;
+    height: 34px;
+    background-image: url(../images/icon_certificate.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.doctor_sertificate_line {
+    position: absolute;
+    top: 21px;
+    right: 42px;
+    border-right: 2px solid #6f7f9e;
+    height: 20px;
+}
+
+.doctor_sertificate_hand_open {
+    position: absolute;
+    top: 21px;
+    right: 37px;
+    border-right: 2px solid #6f7f9e;
+    border-top: 2px solid #6f7f9e;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+}
+
+.doctor_sertificate_hand_close {
+    position: absolute;
+    bottom: 21px;
+    right: 37px;
+    border-right: 2px solid #6f7f9e;
+    border-top: 2px solid #6f7f9e;
+    width: 10px;
+    height: 10px;
+    transform: rotate(135deg);
+    transition: all 0.5s ease;
+}
+
+.sertificate_list {
+    margin: 50px 0 0 30px;
+    max-height: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    /* transition: all 0.5s ease; */
+}
+
+.sertificate_list_open {
+    max-height: 1600px;
+    opacity: 1;
+    display: block !important; 
+}
+
+.sertificate_photo {
+    width: 500px;
+    max-height: 300px;
+    /* height: auto; */
+    margin-bottom: 20px;
+}
