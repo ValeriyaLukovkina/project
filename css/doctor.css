@@ -47,7 +47,6 @@
 }
 
 .doctor_sertificate {
-    width: 100%;
     margin: 0 auto;
     padding: 20px 0 20px 100px;
     font-family: roboto, Arial, sans-serif;
@@ -135,4 +134,21 @@
     max-height: 300px;
     /* height: auto; */
     margin-bottom: 20px;
+}
+
+@media (max-width: 970px) {
+    .doctor_doctor_block_wrp {
+        display: block;
+    }
+
+    .doctor_doctor_block_txt_wrp {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    .sertificate_photo {
+        max-width: 300px;
+        max-height: 170px;
+    }
 }

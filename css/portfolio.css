@@ -20,3 +20,23 @@
     margin-left: 50px;
     
 }
+
+@media (max-width: 1100px) {
+    .portfolio_block_wrp {
+        align-items: flex-start;
+    }
+
+    .portfolio_portfolio_txt {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 970px) {
+    .portfolio_block_wrp {
+        display: block;
+    }
+
+    .portfolio_portfolio_txt {
+        max-width: 100%;
+    }
+}

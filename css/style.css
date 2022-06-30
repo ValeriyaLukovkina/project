@@ -1293,7 +1293,7 @@ body {
         margin: 0 0 0 10px;
     }
 
-    .top_open_nav {
+    .top_nav_btn {
         position: relative;
         display: block;
         text-transform: uppercase;
@@ -1303,7 +1303,12 @@ body {
         font-weight: 300;
         font-size: 16px;
         margin-right: 20px;
-        align-self: flex-end;
+        margin-top: 30px;
+        z-index: 10;
+    }
+
+    .top_open_nav {
+        transition: all 1s;
     }
 
     .top_open_nav:before {
@@ -1328,12 +1333,57 @@ body {
         transition: all 1s;
     }
 
+    .top_close_nav {
+        position: relative;
+        color: transparent;
+        transition: all 1s;
+    }
+
+    .top_close_nav:before {
+        content: '';
+        display: block;
+        width: 47px;
+        border-top: 2px solid #e0a88b;
+        position: absolute;
+        left: -3px;
+        top: -5px;
+        transform: rotate(45deg);
+        transition: all 1s;
+    }
+
+    .top_close_nav:after {
+        content: '';
+        display: block;
+        width: 47px;
+        border-top: 2px solid #e0a88b;
+        position: absolute;
+        left: -3px;
+        top: -5px;
+        transform: rotate(-45deg);
+        transition: all 1s;
+    }
+
     .top_open_nav:hover {
         opacity: 0.5;
     }
 
     .top_nav {
-        display: none;
+        display: block;
+        position: fixed;
+        top: -22px;
+        right: 0;
+        background-color: #fff !important;
+        padding: 50px;
+        opacity: 0;
+        transition: all 0.5s;
+        width: 0;
+    }
+
+    .top_nav_visible {
+        width: 200px;
+        opacity: 1;
+        transition: all 0.5s;
+        z-index: 1;
     }
 
     .top_list {
@@ -1383,5 +1433,115 @@ body {
 
     .about_us_text {
         font-size: 16px;
+    }
+
+    .portfolio_top {
+        display: block;
+    }
+
+    .portfolio_photo_wrp {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .portfolio_link_wrp {
+        margin: 0 auto;
+    }
+
+    .doctor_block_wrp {
+        flex-wrap: wrap;
+    }
+
+    .doctor_slide_prev_wrp, 
+    .doctor_slide_next_wrp {
+        display: none;
+    }
+
+    .doctor_block_disable {
+        display: block;
+    }
+
+    .join_form {
+        flex-wrap: wrap;
+    }
+
+    .join_form_label {
+        margin-bottom: 50px;
+        /* margin: 0 auto; */
+    }
+
+    .join_success {
+        right: 207px;
+    }
+
+    .map_block {
+        position: relative;
+        top: 0;
+        left: 0;
+        align-items: flex-start;
+    }
+
+    .map_block_button {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 765px) {
+    .top {
+        background-image: none;
+    }
+
+    .top_block {
+        margin: 0 auto;
+        min-height: 400px;
+    }
+
+    .about_us {
+        background-image: none;
+    }
+
+    .about_us_wrp {
+        margin: 0 0 0 30px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .portfolio_photo_wrp {
+        width: 400px;
+        height: 300px;
+    }
+
+    .portfolio_scroll {
+        height: 296px;
+        left: 47%;
+    }
+
+    .portfolio_scroll_span {
+        top: 120px;
+    }
+
+    .portfolio_photo {
+        height: 300px;
+    }
+
+    .portfolio_photo_before {
+        clip: rect(0px,500px,400px,190px);
+    }
+
+    .portfolio_photo_after {
+        clip: rect(0px,190px,400px,0);
+    }
+
+    .footer_list {
+        min-width: 0;
+    }
+    .service_block_letter {
+        opacity: 0.5;
+    }
+    .service_block_text {
+        z-index: +5;
     }
 }

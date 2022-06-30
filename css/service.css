@@ -67,3 +67,25 @@
 .service_price_link:hover .service_add {
     opacity: 0.5;
 }
+
+@media (max-width: 1230px) {
+    .service_serv_wrp_in {
+        display: block;
+    }
+
+    .service_text_wrp {
+        width: auto;
+        margin: 0 30px 0 30px;
+    }
+}
+
+@media (max-width: 840px) {
+    .service_price_link {
+        min-width: 0;
+        font-size: 18px;
+    }
+
+    /* .service_price_wrp {
+        font-size: 20px;
+    } */
+}

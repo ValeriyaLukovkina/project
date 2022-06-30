@@ -56,7 +56,6 @@
 }
 
 .about_us_info_slider_photo {
-    min-width: 490px;
     max-width: 600px;
     position: absolute;
     top: 0;
@@ -87,3 +86,131 @@
     background-color: #fff;
 
 }
+
+@media (max-width: 970px) {
+    .about_us_info {
+        min-height: 1000px;
+    }
+    .about_us_info_text_wrp {
+        max-width: none;
+    }    
+
+    .about_us_info_wrp_in {
+        display: block;
+    }
+
+    .about_us_info_slider {
+        margin-left: 50px;
+    }
+
+    .about_us_info_slider_span_wrp {
+        bottom: -480px;
+    }
+}
+
+@media (max-width: 720px) {
+    .about_us_info {
+        min-height: 850px;
+    }
+
+    .about_us_info_bgc {
+        font-size: 56px;
+    }
+    .about_us_info_txt {
+        font-size: 18px;
+    }
+
+    .about_us_info_list {
+        font-size: 18px;
+    }
+
+    .about_us_info_slider {
+        max-width: 500px;  
+        margin-left: 20px;      
+    }
+
+    .about_us_info_slider_photo {
+        max-width: 500px; 
+    }
+
+    .about_us_info_slider_span_wrp {
+        bottom: -400px;
+        left: 36%;
+    }
+}
+
+@media (max-width:545px) {
+    .about_us_info {
+        min-height: 650px;
+    }
+    .about_us_info_txt {
+        font-size: 16px;
+    }
+
+    .about_us_info_list {
+        font-size: 16px;
+    }
+    .about_us_info_slider_photo {
+        max-height: 200px;
+    }
+
+    .about_us_info_item:before {
+        width: 18px;
+        height: 8px;
+        top: 6px;
+        left: -31px;
+    }
+
+    .about_us_info_list {
+        padding-left: 20px;
+    }
+
+    .about_us_info_slider_span_wrp {
+        bottom: -191px;
+        left: 11%;
+    }
+
+}
+
+@media (max-width:393px) {
+    .about_us_info_title {
+        font-size: 20px;
+    }
+    .about_us_info_txt {
+        font-size: 14px;
+    }
+
+    .about_us_info_list {
+        font-size: 14px;
+    }
+    .about_us_info {
+        min-height: 630px;
+    }
+}
+
+
+/* @media (max-width: 506px) {
+    .about_us_info {
+        min-height: 920px;
+    }
+}
+
+@media (max-width: 430px) {
+    .about_us_info_slider {
+        max-width: 300px;        
+    }
+
+    .about_us_info_slider_photo {
+        min-width: 200px;
+        max-width: 300px; 
+    }
+
+    .about_us_info {
+        min-height: 850px;
+    }
+
+    .about_us_info_slider_span_wrp {
+        bottom: -240px;
+        left: 27%;
+    }
+} */
